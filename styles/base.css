@@ -1,0 +1,80 @@
+/* Import fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply font-family to HTML */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply CSS Flex to navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Limit width and center main element */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Layout main column cards using CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p:first-of-type {
+    margin-bottom: 10px;
+}
+
+footer span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+footer #lastModified {
+    font-style: italic;
+}
