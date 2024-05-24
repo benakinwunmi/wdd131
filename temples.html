@@ -6,64 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
     <script defer src="scripts/temples.js"></script>
 
 </head>
 
 <body>
     <header>
-        <h1>Temple Album</h1>
+        <h1>Benjamin's Temple Album</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
             <button id="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="grid-content">
-        <h2>Temple Selection</h2>
-        <figure class="grid-item">
-            <img src="images/temple1.png" alt="Temple 1">
-            <figcaption>Temple 1</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple2.png" alt="Temple 2">
-            <figcaption>Temple 2</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple3.png" alt="Temple 3">
-            <figcaption>Temple 3</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple4.png" alt="Temple 4">
-            <figcaption>Temple 4</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple5.png" alt="Temple 5">
-            <figcaption>Temple 5</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple6.png" alt="Temple 6">
-            <figcaption>Temple 6</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple7.png" alt="Temple 7">
-            <figcaption>Temple 7</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple8.png" alt="Temple 8">
-            <figcaption>Temple 8</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple9.png" alt="Temple 9">
-            <figcaption>Temple 9</figcaption>
-        </figure>
-        <figure class="grid-item">
-            <img src="images/temple10.png" alt="Temple 10">
-            <figcaption>Temple 10</figcaption>
-        </figure>
+    <main>
+        <h2>Selected Temples</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/temple1.png" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.png" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.png" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.png" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.png" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.png" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.png" alt="Temple 7">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.png" alt="Temple 8">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.png" alt="Temple 9">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple10.png" alt="Temple 10">
+                <figcaption>Temple 10</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="copyrightYear"></span> 🪨 Benjamin Akinwunmi 🪨 Ogun, Nigeria 🏡Last modified: <span

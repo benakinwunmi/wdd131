@@ -1,14 +1,12 @@
-// JavaScript for responsive hamburger menu
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('nav');
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        hamburger.textContent = navLinks.classList.contains('show') ? 'X' : '☰';
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
 });
-
-// JavaScript for footer copyright year and last modified date
-const currentDate = new Date();
-document.getElementById('copyrightYear').textContent = currentDate.getFullYear();
-
-const lastModified = new Date(document.lastModified);
-document.getElementById('lastModified').textContent = lastModified.toLocaleDateString();
