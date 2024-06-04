@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Planet ApexFitness Tracker</title>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+    <header>
+        <h1>Planet ApexFitness Tracker</h1>
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="features.html">Features</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="carousel">
+            <div class="carousel-item active">
+                <h2>Welcome to Planet ApexFitness Tracker</h2>
+                <p>Track your fitness activities, set fitness goals, and monitor your progress with ease. Get
+                    personalized workout plans tailored to your needs and achieve your fitness goals.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Personalized Workout Plans</h2>
+                <p>Receive workout plans tailored to your fitness level and goals, ensuring effective and safe progress.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h2>Community Support</h2>
+                <p>Join a community of fitness enthusiasts, share your journey, and stay motivated together.</p>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </section>
+        <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Planet ApexFitness Tracker</p>
+        <p>🪨 Benjamin Akinwunmi 🪨 Ogun, Nigeria 🏡 Last modified: <span id="last-modified"></span></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+    <script src="js/project.js"></script>
+</body>
+
+</html>
