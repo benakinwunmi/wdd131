@@ -1,22 +1,23 @@
-/* styles/style.css */
+:root {
+    --primary-color: #00274c;
+    /* Dark blue color */
+    --secondary-color: #b3a369;
+    /* Gold color */
+    --text-color: #000;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: var(--text-color);
 }
 
-header,
-footer {
-    background-color: #B22222;
+header {
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 10px 0;
-}
-
-main {
-    padding: 20px;
+    padding: 1rem;
 }
 
 .hero img {
@@ -24,54 +25,77 @@ main {
     height: auto;
 }
 
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
 .data,
 .weather {
-    margin: 20px 0;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-h1,
-h2 {
-    margin: 0;
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.weather #weather-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-ul li {
-    margin: 5px 0;
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.weather-icon {
-    font-size: 1.5em;
-    vertical-align: middle;
-}
-
-/* Responsive Styles */
 @media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+    }
+
     main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-column: 1 / span 3;
+    }
+
+    .content {
+        grid-column: 1 / span 3;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero,
-    .data,
-    .weather {
-        max-width: 600px;
-        width: 100%;
-    }
-}
-
-@media (min-width: 800px) {
-    main {
-        flex-direction: row;
         justify-content: space-around;
     }
 
     .data,
     .weather {
-        max-width: 300px;
+        width: 30%;
+    }
+
+    .weather {
+        align-items: flex-start;
+        text-align: left;
     }
 }
